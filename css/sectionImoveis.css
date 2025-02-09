@@ -1,0 +1,110 @@
+#imoveis {
+    background: #f3f3f3;
+    overflow: hidden;
+    position: relative;
+}
+
+#imoveis header h4 {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.swiper-pagination-bullet {
+    background-color: #515151; /* Altere #ccc para a cor desejada */
+    opacity: 1; /* Certifique-se de que a opacidade está definida como 1 para uma cor sólida */
+    width: 13px;
+    height: 13px;
+  }
+  
+  /* Cor da bolinha ativa */
+ .swiper-pagination-bullet-active {
+    background-color: #F8A120; /* Altere #ff5722 para a cor desejada */
+}
+
+.swiper-button-next {
+    top: 46%;
+    color: #F8A120; /* Altere #ff5722 para a cor desejada */
+}
+  
+.swiper-button-prev {
+    top: 46%;
+    color: #F8A120; /* Altere #ff5722 para a cor desejada */
+}
+
+#imoveis .cards {
+    padding-bottom: 5rem;
+}
+
+#imoveis .card {
+    background: #dcdcdc;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+#imoveis .card .text {
+    padding: 1rem;
+}
+
+#imoveis .card img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+
+    transition: all 300ms ease-in-out;
+}
+
+#imoveis .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(.8);
+    cursor: pointer;
+}
+
+#imoveis .card h3 {
+    font-size: 2rem;
+}
+
+#imoveis .card h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    margin-block: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    background: #cdcdcd;
+}
+
+#imoveis .card p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+#imoveis .card a {
+    text-decoration: none;
+}
+
+#imoveis .card a button {
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+@media (min-width: 1080px) {
+    section#imoveis {
+        border-radius: 0 10rem 0 10rem;
+    }
+    section#imoveis .card a button {
+        gap: 1rem;
+    }
+
+    section#imoveis .card a button ion-icon {
+        font-size: 2.5rem;
+    }
+}
